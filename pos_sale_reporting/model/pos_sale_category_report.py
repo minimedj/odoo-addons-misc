@@ -27,7 +27,9 @@ from . import materialized_model
 
 class pos_sale_category_report(materialized_model.MaterializedModel):
     _name = 'pos.sale.category.report'
+    # no table corresponding to the fields is created automatically
     _auto = False
+    # Disables automatic creation of 4 fields (id still created)
     _log_access = False
     _table_name = 'pos_sale_category_report'
 
